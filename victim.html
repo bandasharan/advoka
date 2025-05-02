@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advoka - Victim Portal</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo">Victim Portal</h1>
+      <p class="tagline">Submit your case details securely</p>
+    </header>
+    
+    <main>
+      <div class="form-container">
+        <form action="/submit-victim" method="POST">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="Name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="Phone" required 
+                   pattern="[0-9]{10}" title="10 digit phone number">
+          </div>
+          
+          <div class="form-group">
+            <label for="aadhaar">Aadhaar Number *</label>
+            <input type="text" id="aadhaar" name="Aadhaar" required
+                   pattern="[0-9]{12}" title="12 digit Aadhaar number">
+          </div>
+          
+          <div class="form-group">
+            <label for="caseType">Case Type *</label>
+            <select id="caseType" name="CaseType" required>
+              <option value="">Select case type</option>
+              <option value="Criminal">Criminal</option>
+              <option value="Civil">Civil</option>
+              <option value="Family">Family</option>
+              <option value="Property">Property</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="caseDesc">Case Description *</label>
+            <textarea id="caseDesc" name="CaseDesc" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Submit Case</button>
+        </form>
+      </div>
+    </main>
+    
+    <footer>
+      <p>© 2023 Advoka Legal Services. All information is confidential.</p>
+    </footer>
+  </div>
+
+  <div class="mobile-restriction">
+    <i class="fas fa-exclamation-triangle"></i>
+    <h2>Desktop Access Required</h2>
+    <p>For the best experience, please use a desktop or laptop computer.</p>
+  </div>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/chatbot.js"></script>
+</body>
+</html>

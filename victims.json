@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Banda Sharan ",
+    "Phone": "7993814938",
+    "Aadhaar": "123456789123",
+    "CaseType": "Family",
+    "CaseDesc": "yes",
+    "timestamp": "2025-05-02T13:58:46.954Z"
+  },
+  {
+    "Name": "banda sharan",
+    "Phone": "7993814937",
+    "Aadhaar": "123456789124",
+    "CaseType": "Criminal",
+    "CaseDesc": "yes",
+    "timestamp": "2025-05-02T14:06:03.716Z"
+  },
+  {
+    "Name": "anantula swapna",
+    "Phone": "9866518699",
+    "Aadhaar": "123456789125",
+    "CaseType": "Criminal",
+    "CaseDesc": "hello",
+    "timestamp": "2025-05-02T14:12:54.475Z"
+  }
+]
